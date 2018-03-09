@@ -5,6 +5,7 @@ First: [install macOS](https://github.com/pgpx/mac-setup/blob/master/macOS%20USB
 Other setup notes:
 * <https://mattstauffer.com/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell/>
 * <https://computers.tutsplus.com/tutorials/perfect-configurations-with-homebrew-and-cask--cms-20768>
+* <http://sourabhbajaj.com/mac-setup/>
 
 
 ## System Preferences
@@ -79,7 +80,10 @@ _After installing at least one JDK, because that is a pre-requisite_
 This uses <Brewfile> to control the programs to install.  Update this file using ([SO](https://stackoverflow.com/a/39665218/125246)):
 
 ```bash
-brew bundle dump --describe --force
+./brew-bundle-dump.sh
+
+# Which runs
+# brew bundle dump --describe --force
 ```
 
 

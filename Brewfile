@@ -33,6 +33,8 @@ brew "tinyproxy", restart_service: true
 brew "tree"
 # Internet file retriever
 brew "wget"
+# Network settings helper
+brew "whatmask"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.30"
 # Download Apache Tomcat
@@ -45,6 +47,7 @@ brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.0.30"
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.0.38"
 cask "alfred"
 cask "atom"
+cask "cheatsheet"
 cask "docker"
 cask "dropbox"
 cask "google-chrome"
@@ -53,4 +56,6 @@ cask "iterm2"
 cask "sequel-pro"
 cask "sourcetree"
 cask "sublime-text"
+cask "visual-studio-code"
+cask "visualvm"
 cask "pgpx/firefox/firefox-45"
