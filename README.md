@@ -101,7 +101,11 @@ cp .bash_profile ~
 * Clipboard -> change shortcut key to Option-Command-V and expire values:
     ![](images/README_images/alfred-1.png)
 
-### Chrome - LastPass plugin
+### Chrome
+
+* Chrome -> Warn before quitting - check
+
+#### LastPass plugin
 
 Log out automatically:
 
