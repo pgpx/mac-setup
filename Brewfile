@@ -7,6 +7,8 @@ tap "caskroom/versions"
 tap "caskroom/cask"
 # Java build tool
 brew "ant"
+# Create and view interactive cheat sheets for *nix commands
+brew "cheat"
 # Git extension for versioning large files
 brew "git-lfs"
 # GNU implementation of the famous stream editor
@@ -29,6 +31,8 @@ brew "sbt"
 brew "scalaenv"
 # HTTP/HTTPS proxy for POSIX systems
 brew "tinyproxy", restart_service: true
+# Simplified and community-driven man pages
+brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever

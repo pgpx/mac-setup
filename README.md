@@ -6,7 +6,8 @@ Other setup notes:
 * <https://mattstauffer.com/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell/>
 * <https://computers.tutsplus.com/tutorials/perfect-configurations-with-homebrew-and-cask--cms-20768>
 * <http://sourabhbajaj.com/mac-setup/>
-
+* <https://lifehacker.com/five-tools-for-beginners-that-power-up-the-command-line-1791515136>
+* <https://apple.stackexchange.com/questions/12161/os-x-terminal-must-have-utilities>
 
 ## System Preferences
 
@@ -85,7 +86,6 @@ This uses <Brewfile> to control the programs to install.  Update this file using
 # Which runs
 # brew bundle dump --describe --force
 ```
-
 
 ## Shell setup
 
