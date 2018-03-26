@@ -5,6 +5,8 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "caskroom/versions"
 tap "caskroom/cask"
+# CLI tool for working with Architecture Decision Records
+brew "adr-tools"
 # Java build tool
 brew "ant"
 # Create and view interactive cheat sheets for *nix commands
@@ -25,6 +27,12 @@ brew "maven"
 brew "optipng"
 # Monitor data's progress through a pipe
 brew "pv"
+# Python version management
+brew "pyenv"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
+# Alternative to pyenv for managing virtualenvs
+brew "pyenv-virtualenvwrapper"
 # Build tool for Scala projects
 brew "sbt"
 # Command-line tool to manage Scala environments

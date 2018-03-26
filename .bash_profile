@@ -15,6 +15,10 @@ export MAVEN_OPTS='-DsocksProxyHost=10.40.212.118 -DsocksProxyPort=1080 -DsocksN
 # For brew scalaenv https://github.com/mazgi/scalaenv
 eval "$(scalaenv init -)"
 
+# For pyenv
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 SBT_OPTS="-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
 
 if [ -n "${TERM}" ]; then

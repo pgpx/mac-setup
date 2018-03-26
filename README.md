@@ -192,6 +192,30 @@ Moom settings:
     jenv enable-plugin springboot
     ```
 
+### Python
+
+Don't install Python directly with brew, but instead use [pyenv](https://github.com/pyenv/pyenv), [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv), and [pyenv-virtualenvwrapper](https://github.com/pyenv/pyenv-virtualenvwrapper)
+
+* ([SO](https://stackoverflow.com/a/36968673/125246)) - <http://blog.pinaxproject.com/2015/12/08/how-test-against-multiple-python-versions-parallel/>
+
+Then add to `.bash_profile`:
+
+```bash
+# For pyenv
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+```
+
+Then install the required Python versions:
+
+```bash
+pyenv install 2.7.10
+pyenv install 3.2.6
+pyenv install 3.3.6
+pyenv install 3.4.3
+pyenv install 3.5.0
+```
+
 ### Terminal
 
 Terminal -> Preferences
