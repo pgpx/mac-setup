@@ -22,6 +22,7 @@ Other setup notes:
 * Keyboard
     * Keyboard
         * Show keyboard and emoji viewers in the menu bar
+        * Use F1, F2, etc. keys as standard function keys on external keyboards
         * Customise control strip... - Mute, Lock, Volume, Dashboard
     * Text
         * Correct spelling automatically - uncheck
