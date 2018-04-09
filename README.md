@@ -101,6 +101,7 @@ cp .bash_profile ~
 * Powerpack -> Activate Your Powerpack and enter license code
 * Clipboard -> change shortcut key to Option-Command-V and expire values:
     ![](images/README_images/alfred-1.png)
+* Alfred Preferences → Appearance → Options (lower left corner) → Show Alfred on → Mouse screen. ([ref](https://www.alfredforum.com/topic/10175-auto-follow-on-multiple-screens/?tab=comments#comment-51182))
 
 ### Chrome
 
