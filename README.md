@@ -137,6 +137,12 @@ git config --global pull.rebase true
 git config --global --list
 ```
 
+Install [git-lfs](https://git-lfs.github.com/) (after brew has installed it):
+
+```bash
+git lfs install
+```
+
 ### IntelliJ
 
 * [Sync settings from JetBrains account](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html)
