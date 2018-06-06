@@ -1,10 +1,12 @@
 tap "pgpx/firefox"
 tap "pgpx/download-apache-tomcat"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "caskroom/versions"
-tap "caskroom/cask"
+# Search tool like grep, but optimized for programmers
+brew "ack"
 # CLI tool for working with Architecture Decision Records
 brew "adr-tools"
 # Java build tool
@@ -13,16 +15,22 @@ brew "ant"
 brew "cheat"
 # Git extension for versioning large files
 brew "git-lfs"
+# The official GitLab CI runner written in Go
+brew "gitlab-runner", link: false
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # Build system based on the Groovy language
 brew "gradle"
+# Improved top (interactive process viewer)
+brew "htop"
 # Manage your Java environment
 brew "jenv"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Java-based project management
 brew "maven"
+# Free, fast, friendly file browser
+brew "nnn"
 # PNG file optimizer
 brew "optipng"
 # Monitor data's progress through a pipe
@@ -67,6 +75,9 @@ cask "iterm2"
 cask "sequel-pro"
 cask "sourcetree"
 cask "sublime-text"
+cask "telegram-desktop"
+cask "tunnelblick"
 cask "visual-studio-code"
 cask "visualvm"
+cask "homebrew/cask-versions/java6"
 cask "pgpx/firefox/firefox-45"
