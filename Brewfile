@@ -1,10 +1,10 @@
-tap "pgpx/firefox"
-tap "pgpx/download-apache-tomcat"
+tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "homebrew/cask"
-tap "homebrew/bundle"
 tap "homebrew/services"
+tap "pgpx/download-apache-tomcat"
+tap "pgpx/firefox"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # CLI tool for working with Architecture Decision Records
@@ -13,13 +13,15 @@ brew "adr-tools"
 brew "ant"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
 # Git extension for versioning large files
 brew "git-lfs"
-# The official GitLab CI runner written in Go
-brew "gitlab-runner", link: false
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# Build system based on the Groovy language
+# Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Improved top (interactive process viewer)
 brew "htop"
@@ -27,6 +29,8 @@ brew "htop"
 brew "jenv"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Java-based project management
 brew "maven"
 # Free, fast, friendly file browser
@@ -51,6 +55,8 @@ brew "tinyproxy", restart_service: true
 brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # Internet file retriever
 brew "wget"
 # Network settings helper
@@ -72,6 +78,7 @@ cask "dropbox"
 cask "google-chrome"
 cask "intellij-idea"
 cask "iterm2"
+cask "java6"
 cask "sequel-pro"
 cask "sourcetree"
 cask "sublime-text"
@@ -79,5 +86,4 @@ cask "telegram-desktop"
 cask "tunnelblick"
 cask "visual-studio-code"
 cask "visualvm"
-cask "homebrew/cask-versions/java6"
 cask "pgpx/firefox/firefox-45"
