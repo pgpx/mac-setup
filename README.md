@@ -68,6 +68,8 @@ If we want multiple (old) versions of the same major version of Java, then we ha
 
 Could consider using [sdkman](http://sdkman.io/) in future.
 
+Enable JCE for JDK >= 8u1
+
 ## Install applications using Brew
 
 _After installing at least one JDK, because that is a pre-requisite_
