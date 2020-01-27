@@ -1,16 +1,19 @@
 tap "derailed/k9s"
+tap "etopeter/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "instrumenta/instrumenta"
 tap "jesseduffield/lazydocker"
 tap "pgpx/download-apache-tomcat"
 tap "pgpx/firefox"
 tap "sambadevi/powerlevel9k"
 tap "skanehira/docui"
 tap "wagoodman/dive"
+tap "weaveworks/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # CLI tool for working with Architecture Decision Records
@@ -41,6 +44,10 @@ brew "gnupg"
 brew "gradle"
 # Improved top (interactive process viewer)
 brew "htop"
+# Static analyzer for Java, C, C++, and Objective-C
+brew "infer"
+# Cross-platform Java Version Manager
+brew "jabba"
 # Manage your Java environment
 brew "jenv"
 # Lightweight and flexible command-line JSON processor
@@ -101,6 +108,10 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# kubectl plugin to show cluster CPU and Memory requests utilization
+brew "etopeter/tap/kubectl-view-utilization"
+# Validate your Kubernetes configurations
+brew "instrumenta/instrumenta/kubeval"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.30"
 # Download Apache Tomcat
@@ -117,13 +128,17 @@ brew "sambadevi/powerlevel9k/powerlevel9k"
 brew "skanehira/docui/docui"
 # A tool for exploring each layer in a docker image
 brew "wagoodman/dive/dive"
+# The official CLI for Amazon EKS
+brew "weaveworks/tap/eksctl"
 cask "alfred"
 cask "atom"
 cask "balenaetcher"
 cask "brave-browser"
 cask "docker"
 cask "dropbox"
+cask "firefox-45"
 cask "font-meslo-for-powerline"
+cask "github"
 cask "google-chrome"
 cask "hyper"
 cask "intellij-idea"
@@ -136,9 +151,10 @@ cask "openconnect-gui"
 cask "openscad"
 cask "sequel-pro"
 cask "sourcetree"
+cask "spotify"
 cask "sublime-text"
 cask "telegram-desktop"
 cask "tunnelblick"
 cask "visual-studio-code"
 cask "visualvm"
-cask "pgpx/firefox/firefox-45"
+cask "yed"
