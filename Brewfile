@@ -8,6 +8,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "instrumenta/instrumenta"
 tap "jesseduffield/lazydocker"
+tap "k14s/tap"
 tap "pgpx/download-apache-tomcat"
 tap "pgpx/firefox"
 tap "sambadevi/powerlevel9k"
@@ -34,12 +35,18 @@ brew "findutils"
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
+# Tcl/Tk UI for the git revision control system
+brew "git-gui"
 # Git extension for versioning large files
 brew "git-lfs"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Go programming environment (1.13)
+brew "go@1.13"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Improved top (interactive process viewer)
@@ -84,6 +91,8 @@ brew "rclone"
 brew "sbt"
 # Command-line tool to manage Scala environments
 brew "scalaenv"
+# Work with remote images registries
+brew "skopeo"
 # The cross-shell prompt for astronauts
 brew "starship"
 # HTTP/HTTPS proxy for POSIX systems
@@ -112,6 +121,10 @@ brew "derailed/k9s/k9s"
 brew "etopeter/tap/kubectl-view-utilization"
 # Validate your Kubernetes configurations
 brew "instrumenta/instrumenta/kubeval"
+# Kapp
+brew "k14s/tap/kapp"
+# Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.100"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.30"
 # Download Apache Tomcat
@@ -119,9 +132,23 @@ brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.57"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.69"
 # Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.81"
+# Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.90"
+# Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.96"
+# Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.99"
+# Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.0.30"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.0.38"
+# Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.5.53"
+# Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.33"
+# Download Apache Tomcat
+brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.34"
 # A badass zsh theme with more power than a normal earthling
 brew "sambadevi/powerlevel9k/powerlevel9k"
 # TUI Client for Docker
@@ -130,10 +157,13 @@ brew "skanehira/docui/docui"
 brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+cask "adobe-acrobat-reader"
 cask "alfred"
 cask "atom"
+cask "authy"
 cask "balenaetcher"
 cask "brave-browser"
+cask "discord"
 cask "docker"
 cask "dropbox"
 cask "firefox-45"
@@ -145,11 +175,13 @@ cask "intellij-idea"
 cask "iterm2"
 cask "java6"
 cask "kitematic"
+cask "libreoffice"
 cask "mattermost"
 cask "meld"
 cask "openconnect-gui"
 cask "openscad"
 cask "sequel-pro"
+cask "skype"
 cask "sourcetree"
 cask "spotify"
 cask "sublime-text"
