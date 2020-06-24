@@ -1,3 +1,4 @@
+tap "adoptopenjdk/openjdk"
 tap "derailed/k9s"
 tap "etopeter/tap"
 tap "homebrew/bundle"
@@ -8,7 +9,9 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "instrumenta/instrumenta"
 tap "jesseduffield/lazydocker"
+tap "jzelinskie/faq"
 tap "k14s/tap"
+tap "kaos/shell"
 tap "pgpx/download-apache-tomcat"
 tap "pgpx/firefox"
 tap "sambadevi/powerlevel9k"
@@ -27,10 +30,18 @@ brew "aws-iam-authenticator"
 brew "awscli"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Bash Automated Testing System
+brew "bats-core"
+# Diff your Docker containers
+brew "container-diff"
+# Top-like interface for container metrics
+brew "ctop"
 # Pack, ship and run any application as a lightweight container
 brew "docker", link: false
 # Collection of GNU find, xargs, and locate
 brew "findutils"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # Distributed revision control system
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
@@ -49,6 +60,8 @@ brew "gnupg"
 brew "go@1.13"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
+# The Kubernetes package manager
+brew "helm@2"
 # Improved top (interactive process viewer)
 brew "htop"
 # Static analyzer for Java, C, C++, and Objective-C
@@ -67,6 +80,8 @@ brew "kustomize"
 brew "lazydocker"
 # Java-based project management
 brew "maven"
+# Intercept, modify, replay, save HTTP/S traffic
+brew "mitmproxy"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Tiny, lightning fast, feature-packed file manager
@@ -121,8 +136,14 @@ brew "derailed/k9s/k9s"
 brew "etopeter/tap/kubectl-view-utilization"
 # Validate your Kubernetes configurations
 brew "instrumenta/instrumenta/kubeval"
+# Format Agnostic jQ
+brew "jzelinskie/faq/faq"
 # Kapp
 brew "k14s/tap/kapp"
+# Common assertions for Bats
+brew "kaos/shell/bats-assert"
+# Common filesystem assertions for Bats
+brew "kaos/shell/bats-file"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.100"
 # Download Apache Tomcat
@@ -175,6 +196,7 @@ cask "intellij-idea"
 cask "iterm2"
 cask "java6"
 cask "kitematic"
+cask "lens"
 cask "libreoffice"
 cask "mattermost"
 cask "meld"
