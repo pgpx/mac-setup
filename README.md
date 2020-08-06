@@ -184,6 +184,8 @@ Moom settings:
     env -u JAVA_TOOL_OPTIONS -u _JAVA_OPTIONS jenv add \
        /Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/
     env -u JAVA_TOOL_OPTIONS -u _JAVA_OPTIONS jenv add \
+        /Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/
+    env -u JAVA_TOOL_OPTIONS -u _JAVA_OPTIONS jenv add \
        /Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/
     env -u JAVA_TOOL_OPTIONS -u _JAVA_OPTIONS jenv add \
        /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/
