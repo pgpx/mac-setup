@@ -24,6 +24,8 @@ brew "ack"
 brew "adr-tools"
 # Java build tool
 brew "ant"
+# GitOps Continuous Delivery for Kubernetes
+brew "argocd"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Official Amazon AWS command-line interface
@@ -46,6 +48,8 @@ brew "ctop"
 brew "findutils"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Monitor a directory for changes and run a shell command
+brew "fswatch"
 # Distributed revision control system
 brew "git"
 # Enable transparent encryption/decryption of files in a git repo
@@ -88,6 +92,10 @@ brew "kubernetes-cli"
 brew "kustomize"
 # Lazier way to manage everything docker
 brew "lazydocker"
+# Sophisticated file transfer program
+brew "lftp"
+# Synchronize local directories with remote targets
+brew "lsyncd"
 # Java-based project management
 brew "maven"
 # Command-line interface (CLI) for mermaid
@@ -110,6 +118,8 @@ brew "optipng"
 brew "pipenv"
 # Draw UML diagrams
 brew "plantuml"
+# Cloud native development platform
+brew "pulumi"
 # Monitor data's progress through a pipe
 brew "pv"
 # Python version management
@@ -126,6 +136,8 @@ brew "sbt"
 brew "scalaenv"
 # Work with remote images registries
 brew "skopeo"
+# Editor of encrypted files
+brew "sops"
 # Cross-shell prompt for astronauts
 brew "starship"
 # HTTP/HTTPS proxy for POSIX systems
@@ -224,6 +236,8 @@ cask "github"
 cask "google-chrome"
 # Terminal built on web technologies
 cask "hyper"
+# Vector graphics editor
+cask "inkscape"
 # Java IDE by JetBrains
 cask "intellij-idea"
 # System monitoring app
