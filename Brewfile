@@ -1,6 +1,7 @@
 tap "adoptopenjdk/openjdk"
 tap "derailed/k9s"
 tap "etopeter/tap"
+tap "gabrie30/utils"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -16,7 +17,6 @@ tap "pgpx/download-apache-tomcat"
 tap "pgpx/firefox"
 tap "sambadevi/powerlevel9k"
 tap "skanehira/docui"
-tap "wagoodman/dive"
 tap "weaveworks/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
@@ -44,6 +44,12 @@ brew "container-diff"
 brew "crane"
 # Top-like interface for container metrics
 brew "ctop"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Tool for exploring each layer in a docker image
+brew "dive"
+# Docker Credential Helper for Amazon ECR
+brew "docker-credential-helper-ecr", link: false
 # Collection of GNU find, xargs, and locate
 brew "findutils"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -68,6 +74,8 @@ brew "gnu-tar"
 brew "gnupg"
 # Go programming environment (1.13)
 brew "go@1.13"
+# Go version management
+brew "goenv"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
@@ -75,7 +83,7 @@ brew "graphviz"
 # Smarter Dockerfile linter to validate best practices
 brew "hadolint"
 # Kubernetes package manager
-brew "helm@2"
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
 # Cross-platform Java Version Manager
@@ -166,6 +174,8 @@ brew "zsh-syntax-highlighting"
 brew "derailed/k9s/k9s"
 # kubectl plugin to show cluster CPU and Memory requests utilization
 brew "etopeter/tap/kubectl-view-utilization"
+# Quickly clone an entire org/users repositories into one directory
+brew "gabrie30/utils/ghorg"
 # Validate your Kubernetes configurations
 brew "instrumenta/instrumenta/kubeval"
 # Format Agnostic jQ
@@ -206,8 +216,6 @@ brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.34"
 brew "sambadevi/powerlevel9k/powerlevel9k"
 # TUI Client for Docker
 brew "skanehira/docui/docui"
-# A tool for exploring each layer in a docker image
-brew "wagoodman/dive/dive"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # View, print, and comment on PDF documents
