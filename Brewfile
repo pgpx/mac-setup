@@ -28,6 +28,8 @@ brew "ant"
 brew "argocd"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
+# Easily rotate your AWS access key
+brew "aws-rotate-key"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Gnome disk usage analyzer
@@ -50,6 +52,8 @@ brew "direnv"
 brew "dive"
 # Docker Credential Helper for Amazon ECR
 brew "docker-credential-helper-ecr", link: false
+# TUI Client for Docker
+brew "docui"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -72,10 +76,8 @@ brew "gnu-sed"
 brew "gnu-tar"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Go programming environment (1.13)
-brew "go@1.13"
 # Go version management
-brew "goenv"
+brew "goenv", args: ["HEAD"]
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
@@ -86,6 +88,8 @@ brew "hadolint"
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Istio configuration command-line utility
+brew "istioctl"
 # Cross-platform Java Version Manager
 brew "jabba"
 # Manage your Java environment
@@ -96,6 +100,8 @@ brew "jq"
 brew "kind"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Validate Kubernetes configuration files, supports multiple Kubernetes versions
+brew "kubeval"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
 # Lazier way to manage everything docker
@@ -116,6 +122,8 @@ brew "moreutils"
 brew "ncdu"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
+# Modern shell for the GitHub era
+brew "nushell"
 # Kubernetes introspection tool for developers
 brew "octant"
 # Open client for Cisco AnyConnect VPN
@@ -142,6 +150,8 @@ brew "rclone"
 brew "sbt"
 # Command-line tool to manage Scala environments
 brew "scalaenv"
+# Easy and Repeatable Kubernetes Development
+brew "skaffold"
 # Work with remote images registries
 brew "skopeo"
 # Editor of encrypted files
@@ -156,6 +166,8 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
@@ -164,6 +176,8 @@ brew "wget"
 brew "whalebrew"
 # Network settings helper
 brew "whatmask"
+# Process YAML documents from the CLI
+brew "yq"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
@@ -176,8 +190,6 @@ brew "derailed/k9s/k9s"
 brew "etopeter/tap/kubectl-view-utilization"
 # Quickly clone an entire org/users repositories into one directory
 brew "gabrie30/utils/ghorg"
-# Validate your Kubernetes configurations
-brew "instrumenta/instrumenta/kubeval"
 # Format Agnostic jQ
 brew "jzelinskie/faq/faq"
 # Kapp
@@ -214,8 +226,6 @@ brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.33"
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.34"
 # A badass zsh theme with more power than a normal earthling
 brew "sambadevi/powerlevel9k/powerlevel9k"
-# TUI Client for Docker
-brew "skanehira/docui/docui"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # View, print, and comment on PDF documents
@@ -236,6 +246,8 @@ cask "discord"
 cask "docker"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
+# Web browser
+cask "firefox"
 cask "firefox-45"
 cask "font-meslo-for-powerline"
 # Desktop client for GitHub repositories
@@ -262,6 +274,8 @@ cask "kitematic"
 cask "lens"
 # Office suite
 cask "libreoffice"
+# Slicer for Resin 3D printers
+cask "lycheeslicer"
 # Open-source, self-hosted Slack-alternative
 cask "mattermost"
 # Visual diff and merge tool
@@ -284,6 +298,8 @@ cask "sublime-text"
 cask "telegram-desktop"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
+# MSLA/DLP, file analysis, calibration, repair, conversion and manipulation
+cask "uvtools"
 # Development environment
 cask "vagrant"
 # Open-source code editor
