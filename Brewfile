@@ -2,21 +2,19 @@ tap "adoptopenjdk/openjdk"
 tap "derailed/k9s"
 tap "etopeter/tap"
 tap "gabrie30/utils"
+tap "golangci/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "instrumenta/instrumenta"
-tap "jesseduffield/lazydocker"
 tap "jzelinskie/faq"
 tap "k14s/tap"
 tap "kaos/shell"
 tap "pgpx/download-apache-tomcat"
-tap "pgpx/firefox"
+tap "pulumi/tap"
 tap "sambadevi/powerlevel9k"
-tap "skanehira/docui"
 tap "weaveworks/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
@@ -42,6 +40,8 @@ brew "bats-core"
 brew "cloc"
 # Diff your Docker containers
 brew "container-diff"
+# Container Signing
+brew "cosign"
 # Tool for interacting with remote images and registries
 brew "crane"
 # Top-like interface for container metrics
@@ -76,6 +76,8 @@ brew "gnu-sed"
 brew "gnu-tar"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Go version management
 brew "goenv", args: ["HEAD"]
 # Open-source build automation tool based on the Groovy and Kotlin DSL
@@ -88,6 +90,8 @@ brew "hadolint"
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Calculate various network masks, etc. from a given IP address
+brew "ipcalc"
 # Istio configuration command-line utility
 brew "istioctl"
 # Cross-platform Java Version Manager
@@ -166,6 +170,8 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Language for application scale JavaScript development
+brew "typescript"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
 # Executes a program periodically, showing output fullscreen
@@ -176,6 +182,8 @@ brew "wget"
 brew "whalebrew"
 # Network settings helper
 brew "whatmask"
+# JavaScript package manager
+brew "yarn"
 # Process YAML documents from the CLI
 brew "yq"
 # UNIX shell (command interpreter)
@@ -190,10 +198,10 @@ brew "derailed/k9s/k9s"
 brew "etopeter/tap/kubectl-view-utilization"
 # Quickly clone an entire org/users repositories into one directory
 brew "gabrie30/utils/ghorg"
+# Fast linters runner for Go.
+brew "golangci/tap/golangci-lint"
 # Format Agnostic jQ
 brew "jzelinskie/faq/faq"
-# Kapp
-brew "k14s/tap/kapp"
 # Common assertions for Bats
 brew "kaos/shell/bats-assert"
 # Common filesystem assertions for Bats
@@ -224,6 +232,8 @@ brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.5.53"
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.33"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.34"
+# A swiss army knife for Pulumi development
+brew "pulumi/tap/pulumictl"
 # A badass zsh theme with more power than a normal earthling
 brew "sambadevi/powerlevel9k/powerlevel9k"
 # The official CLI for Amazon EKS
@@ -242,44 +252,24 @@ cask "balenaetcher"
 cask "brave-browser"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
-cask "docker"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
-# Web browser
-cask "firefox"
-cask "firefox-45"
-cask "font-meslo-for-powerline"
-# Desktop client for GitHub repositories
-cask "github"
-# Web browser
-cask "google-chrome"
+# Developer platform
+cask "dotnet-sdk"
 # Terminal built on web technologies
 cask "hyper"
 # Vector graphics editor
 cask "inkscape"
-# Java IDE by JetBrains
-cask "intellij-idea"
 # System monitoring app
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Legacy runtime for the Java programming language
-cask "java6"
 # Automatically ejects external drives
 cask "jettison"
 # Visual user interface for Docker Container management
 cask "kitematic"
 # Kubernetes IDE
 cask "lens"
-# Office suite
-cask "libreoffice"
 # Slicer for Resin 3D printers
 cask "lycheeslicer"
-# Open-source, self-hosted Slack-alternative
-cask "mattermost"
-# Visual diff and merge tool
-cask "meld"
 # GitLab mirror - Graphical OpenConnect client (beta phase)
 cask "openconnect-gui"
 # Programmable solid 3D CAD modeller
@@ -288,18 +278,12 @@ cask "openscad"
 cask "sequel-pro"
 # Video chat, voice call and instant messaging application
 cask "skype"
-# Graphical client for Git version control
-cask "sourcetree"
 # Music streaming service
 cask "spotify"
 # Text editor for code, markup and prose
 cask "sublime-text"
-# Desktop client for Telegram messenger
-cask "telegram-desktop"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
-# MSLA/DLP, file analysis, calibration, repair, conversion and manipulation
-cask "uvtools"
 # Development environment
 cask "vagrant"
 # Open-source code editor
