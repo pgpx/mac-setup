@@ -13,6 +13,7 @@ tap "jzelinskie/faq"
 tap "k14s/tap"
 tap "kaos/shell"
 tap "pgpx/download-apache-tomcat"
+tap "pgpx/paul"
 tap "pulumi/tap"
 tap "sambadevi/powerlevel9k"
 tap "weaveworks/tap"
@@ -20,6 +21,10 @@ tap "weaveworks/tap"
 brew "ack"
 # CLI tool for working with Architecture Decision Records
 brew "adr-tools"
+# Simple, modern, secure file encryption
+brew "age"
+# Flexible lightweight test report tool
+brew "allure"
 # Java build tool
 brew "ant"
 # GitOps Continuous Delivery for Kubernetes
@@ -36,12 +41,20 @@ brew "baobab"
 brew "coreutils"
 # Bash Automated Testing System
 brew "bats-core"
+# Secure and free password manager for all of your devices
+brew "bitwarden-cli"
 # Statistics utility to count lines of code
 brew "cloc"
+# Command-line tool to manage cert-manager
+brew "cmctl"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
 # Diff your Docker containers
 brew "container-diff"
 # Container Signing
 brew "cosign"
+# Terminal countdown timer
+brew "countdown"
 # Tool for interacting with remote images and registries
 brew "crane"
 # Top-like interface for container metrics
@@ -51,7 +64,7 @@ brew "direnv"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Docker Credential Helper for Amazon ECR
-brew "docker-credential-helper-ecr", link: false
+brew "docker-credential-helper-ecr"
 # TUI Client for Docker
 brew "docui"
 # Collection of GNU find, xargs, and locate
@@ -84,12 +97,16 @@ brew "goenv", args: ["HEAD"]
 brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Tool for glamorous shell scripts
+brew "gum"
 # Smarter Dockerfile linter to validate best practices
 brew "hadolint"
 # Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Calculate various network masks, etc. from a given IP address
 brew "ipcalc"
 # Istio configuration command-line utility
@@ -98,8 +115,14 @@ brew "istioctl"
 brew "jabba"
 # Manage your Java environment
 brew "jenv"
+# Load testing and performance measurement application
+brew "jmeter"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Implementation of JSON Schema for Python
+brew "jsonschema"
+# Generic command-line non-JVM Apache Kafka producer and consumer
+brew "kcat"
 # Run local Kubernetes cluster in Docker
 brew "kind"
 # Kubernetes command-line interface
@@ -112,12 +135,18 @@ brew "kustomize"
 brew "lazydocker"
 # Sophisticated file transfer program
 brew "lftp"
+# Terminal file manager
+brew "llama"
 # Synchronize local directories with remote targets
 brew "lsyncd"
+# Customize your git commit hashes!
+brew "lucky-commit"
 # Java-based project management
 brew "maven"
 # Command-line interface (CLI) for mermaid
 brew "mermaid-cli"
+# Replacement for ls, cp and other commands for object storage
+brew "minio-mc"
 # Intercept, modify, replay, save HTTP/S traffic
 brew "mitmproxy"
 # Collection of tools that nobody wrote when UNIX was young
@@ -134,6 +163,8 @@ brew "octant"
 brew "openconnect"
 # PNG file optimizer
 brew "optipng"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
 # Python dependency management tool
 brew "pipenv"
 # Draw UML diagrams
@@ -150,6 +181,8 @@ brew "pyenv-virtualenv"
 brew "pyenv-virtualenvwrapper"
 # Rsync for cloud storage
 brew "rclone"
+# Persistent key-value database, with built-in net interface
+brew "redis"
 # Build tool for Scala projects
 brew "sbt"
 # Command-line tool to manage Scala environments
@@ -162,6 +195,8 @@ brew "skopeo"
 brew "sops"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Tool to build, change, and version infrastructure
+brew "terraform"
 # HTTP/HTTPS proxy for POSIX systems
 brew "tinyproxy", restart_service: true
 # Simplified and community-driven man pages
@@ -170,6 +205,8 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Vulnerability scanner for container images, file systems, and Git repos
+brew "trivy"
 # Language for application scale JavaScript development
 brew "typescript"
 # Command-line unarchiving tools supporting multiple formats
@@ -184,8 +221,10 @@ brew "whalebrew"
 brew "whatmask"
 # JavaScript package manager
 brew "yarn"
-# Process YAML documents from the CLI
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Command-line fuzzy finder that prioritizes matches on filenames
+brew "zf"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Additional completion definitions for zsh
@@ -207,33 +246,11 @@ brew "kaos/shell/bats-assert"
 # Common filesystem assertions for Bats
 brew "kaos/shell/bats-file"
 # Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.100"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.30"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.57"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.69"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.81"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.90"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.96"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@7.0.99"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.0.30"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.0.38"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@8.5.53"
-# Download Apache Tomcat
-brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.33"
-# Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.34"
 # A swiss army knife for Pulumi development
 brew "pulumi/tap/pulumictl"
+# A tool to convert Terraform projects to Pulumi programs
+brew "pulumi/tap/tf2pulumi"
 # A badass zsh theme with more power than a normal earthling
 brew "sambadevi/powerlevel9k/powerlevel9k"
 # The official CLI for Amazon EKS
@@ -250,10 +267,14 @@ cask "authy"
 cask "balenaetcher"
 # Web browser focusing on privacy
 cask "brave-browser"
+# App to write and organize your ideas
+cask "capacities"
 # Voice and text chat software
 cask "discord"
 # Developer platform
 cask "dotnet-sdk"
+# 3D parametric modeler
+cask "freecad"
 # Terminal built on web technologies
 cask "hyper"
 # Vector graphics editor
@@ -268,12 +289,18 @@ cask "jettison"
 cask "kitematic"
 # Kubernetes IDE
 cask "lens"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Slicer for Resin 3D printers
 cask "lycheeslicer"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # GitLab mirror - Graphical OpenConnect client (beta phase)
 cask "openconnect-gui"
 # Programmable solid 3D CAD modeller
 cask "openscad"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
 # MySQL/MariaDB database management platform
 cask "sequel-pro"
 # Video chat, voice call and instant messaging application
@@ -290,5 +317,7 @@ cask "vagrant"
 cask "visual-studio-code"
 # All-in-One Java Troubleshooting Tool
 cask "visualvm"
+# Network protocol analyzer
+cask "wireshark"
 # Create diagrams manually, or import external data for analysis
 cask "yed"
