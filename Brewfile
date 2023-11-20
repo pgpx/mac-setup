@@ -35,6 +35,8 @@ brew "aws-iam-authenticator"
 brew "aws-rotate-key"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 # Gnome disk usage analyzer
 brew "baobab"
 # GNU File, Shell, and Text utilities
@@ -105,6 +107,8 @@ brew "hadolint"
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Client library for huggingface.co hub
+brew "huggingface-cli"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Calculate various network masks, etc. from a given IP address
@@ -121,22 +125,30 @@ brew "jmeter"
 brew "jq"
 # Implementation of JSON Schema for Python
 brew "jsonschema"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Interactive environments for writing and running code
+brew "jupyterlab"
 # Generic command-line non-JVM Apache Kafka producer and consumer
 brew "kcat"
 # Run local Kubernetes cluster in Docker
 brew "kind"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Package manager for kubectl plugins
+brew "krew"
+# Easily check your clusters for use of deprecated APIs
+brew "kubent"
 # Validate Kubernetes configuration files, supports multiple Kubernetes versions
 brew "kubeval"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Kubernetes Native Policy Management
+brew "kyverno"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Sophisticated file transfer program
 brew "lftp"
-# Terminal file manager
-brew "llama"
 # Synchronize local directories with remote targets
 brew "lsyncd"
 # Customize your git commit hashes!
@@ -163,12 +175,12 @@ brew "octant"
 brew "openconnect"
 # PNG file optimizer
 brew "optipng"
-# Swiss-army knife of markup format conversion
-brew "pandoc"
 # Python dependency management tool
 brew "pipenv"
 # Draw UML diagrams
 brew "plantuml"
+# Python package management tool
+brew "poetry"
 # Cloud native development platform
 brew "pulumi"
 # Monitor data's progress through a pipe
@@ -179,6 +191,8 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 # Alternative to pyenv for managing virtualenvs
 brew "pyenv-virtualenvwrapper"
+# QR Code generation
+brew "qrencode"
 # Rsync for cloud storage
 brew "rclone"
 # Persistent key-value database, with built-in net interface
@@ -195,6 +209,8 @@ brew "skopeo"
 brew "sops"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Log file highlighter
+brew "tailspin"
 # Tool to build, change, and version infrastructure
 brew "terraform"
 # HTTP/HTTPS proxy for POSIX systems
@@ -211,6 +227,10 @@ brew "trivy"
 brew "typescript"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Disaster recovery for Kubernetes resources and persistent volumes
+brew "velero"
+# Terminal navigator
+brew "walk"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever
@@ -255,6 +275,8 @@ brew "pulumi/tap/tf2pulumi"
 brew "sambadevi/powerlevel9k/powerlevel9k"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Application launcher and productivity software
@@ -299,6 +321,8 @@ cask "obsidian"
 cask "openconnect-gui"
 # Programmable solid 3D CAD modeller
 cask "openscad"
+# Podcast platform
+cask "pocket-casts"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # MySQL/MariaDB database management platform
