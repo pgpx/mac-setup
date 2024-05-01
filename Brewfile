@@ -12,10 +12,12 @@ tap "homebrew/services"
 tap "jzelinskie/faq"
 tap "k14s/tap"
 tap "kaos/shell"
+tap "peak/tap"
 tap "pgpx/download-apache-tomcat"
 tap "pgpx/paul"
 tap "pulumi/tap"
 tap "sambadevi/powerlevel9k"
+tap "thezoraiz/ascii-image-converter"
 tap "weaveworks/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
@@ -67,8 +69,8 @@ brew "direnv"
 brew "dive"
 # Docker Credential Helper for Amazon ECR
 brew "docker-credential-helper-ecr"
-# TUI Client for Docker
-brew "docui"
+# Git for data science projects
+brew "dvc"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -123,8 +125,8 @@ brew "jenv"
 brew "jmeter"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Implementation of JSON Schema for Python
-brew "jsonschema"
+# Convert JSON and JSON Lines to terminal, CSV, HTTP, and markdown tables
+brew "jtbl"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Interactive environments for writing and running code
@@ -139,8 +141,6 @@ brew "kubernetes-cli"
 brew "krew"
 # Easily check your clusters for use of deprecated APIs
 brew "kubent"
-# Validate Kubernetes configuration files, supports multiple Kubernetes versions
-brew "kubeval"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
 # Kubernetes Native Policy Management
@@ -155,8 +155,6 @@ brew "lsyncd"
 brew "lucky-commit"
 # Java-based project management
 brew "maven"
-# Command-line interface (CLI) for mermaid
-brew "mermaid-cli"
 # Replacement for ls, cp and other commands for object storage
 brew "minio-mc"
 # Intercept, modify, replay, save HTTP/S traffic
@@ -167,20 +165,28 @@ brew "moreutils"
 brew "ncdu"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
+# Finds secrets and sensitive information in textual data and Git history
+brew "noseyparker"
 # Modern shell for the GitHub era
 brew "nushell"
-# Kubernetes introspection tool for developers
-brew "octant"
 # Open client for Cisco AnyConnect VPN
 brew "openconnect"
+# Drop-in replacement for Terraform. Infrastructure as Code Tool
+brew "opentofu"
 # PNG file optimizer
 brew "optipng"
+# Parallel gzip
+brew "pigz"
 # Python dependency management tool
 brew "pipenv"
 # Draw UML diagrams
 brew "plantuml"
 # Python package management tool
 brew "poetry"
+# Generate locked-down AWS IAM Policies
+brew "policy_sentry"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
 # Cloud native development platform
 brew "pulumi"
 # Monitor data's progress through a pipe
@@ -193,6 +199,8 @@ brew "pyenv-virtualenv"
 brew "pyenv-virtualenvwrapper"
 # QR Code generation
 brew "qrencode"
+# Simple, modern, secure file encryption
+brew "rage"
 # Rsync for cloud storage
 brew "rclone"
 # Persistent key-value database, with built-in net interface
@@ -209,6 +217,8 @@ brew "skopeo"
 brew "sops"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
 # Log file highlighter
 brew "tailspin"
 # Tool to build, change, and version infrastructure
@@ -227,6 +237,8 @@ brew "trivy"
 brew "typescript"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Disaster recovery for Kubernetes resources and persistent volumes
 brew "velero"
 # Terminal navigator
@@ -237,8 +249,6 @@ brew "watch"
 brew "wget"
 # Homebrew, but with Docker images
 brew "whalebrew"
-# Network settings helper
-brew "whatmask"
 # JavaScript package manager
 brew "yarn"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -265,14 +275,16 @@ brew "jzelinskie/faq/faq"
 brew "kaos/shell/bats-assert"
 # Common filesystem assertions for Bats
 brew "kaos/shell/bats-file"
+# Parallel S3 and local filesystem execution tool
+brew "peak/tap/s5cmd"
 # Download Apache Tomcat
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.34"
 # A swiss army knife for Pulumi development
 brew "pulumi/tap/pulumictl"
-# A tool to convert Terraform projects to Pulumi programs
-brew "pulumi/tap/tf2pulumi"
 # A badass zsh theme with more power than a normal earthling
 brew "sambadevi/powerlevel9k/powerlevel9k"
+# Convert images into ascii art
+brew "thezoraiz/ascii-image-converter/ascii-image-converter"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # Password manager that keeps all passwords secure behind one password
@@ -281,21 +293,19 @@ cask "1password"
 cask "adobe-acrobat-reader"
 # Application launcher and productivity software
 cask "alfred"
-# Text editor
-cask "atom"
 # Two-factor authentication software
 cask "authy"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Web browser focusing on privacy
 cask "brave-browser"
-# App to write and organize your ideas
+# App to write and organise your ideas
 cask "capacities"
 # Voice and text chat software
 cask "discord"
 # Developer platform
 cask "dotnet-sdk"
-# 3D parametric modeler
+# 3D parametric modeller
 cask "freecad"
 # Terminal built on web technologies
 cask "hyper"
@@ -307,8 +317,6 @@ cask "istat-menus"
 cask "iterm2"
 # Automatically ejects external drives
 cask "jettison"
-# Visual user interface for Docker Container management
-cask "kitematic"
 # Kubernetes IDE
 cask "lens"
 # Privacy-first, open-source platform for knowledge sharing and management
@@ -317,22 +325,24 @@ cask "logseq"
 cask "lycheeslicer"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# GitLab mirror - Graphical OpenConnect client (beta phase)
-cask "openconnect-gui"
 # Programmable solid 3D CAD modeller
 cask "openscad"
 # Podcast platform
 cask "pocket-casts"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
-# MySQL/MariaDB database management platform
-cask "sequel-pro"
+# MySQL/MariaDB database management
+cask "sequel-ace"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
+cask "session-manager-plugin"
 # Video chat, voice call and instant messaging application
 cask "skype"
 # Music streaming service
 cask "spotify"
 # Text editor for code, markup and prose
 cask "sublime-text"
+# Terminal emulator, SSH and serial client
+cask "tabby"
 # Free and open-source OpenVPN client
 cask "tunnelblick"
 # Development environment
@@ -345,3 +355,5 @@ cask "visualvm"
 cask "wireshark"
 # Create diagrams manually, or import external data for analysis
 cask "yed"
+# Video communication and virtual meeting platform
+cask "zoom"
