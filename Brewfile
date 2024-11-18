@@ -5,8 +5,6 @@ tap "gabrie30/utils"
 tap "golangci/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jzelinskie/faq"
@@ -23,6 +21,8 @@ tap "weaveworks/tap"
 brew "ack"
 # CLI tool for working with Architecture Decision Records
 brew "adr-tools"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Simple, modern, secure file encryption
 brew "age"
 # Flexible lightweight test report tool
@@ -37,6 +37,8 @@ brew "aws-iam-authenticator"
 brew "aws-rotate-key"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Azure Storage data transfer utility
+brew "azcopy"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # Gnome disk usage analyzer
@@ -87,6 +89,8 @@ brew "git-filter-repo"
 brew "git-gui"
 # Git extension for versioning large files
 brew "git-lfs"
+# Audit git repos for secrets
+brew "gitleaks"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU version of the tar archiving utility
@@ -153,12 +157,12 @@ brew "lftp"
 brew "lsyncd"
 # Customize your git commit hashes!
 brew "lucky-commit"
+# Personal Knowledge Management System for the LSP
+brew "markdown-oxide"
 # Java-based project management
 brew "maven"
 # Replacement for ls, cp and other commands for object storage
 brew "minio-mc"
-# Intercept, modify, replay, save HTTP/S traffic
-brew "mitmproxy"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # NCurses Disk Usage
@@ -171,14 +175,22 @@ brew "noseyparker"
 brew "nushell"
 # Open client for Cisco AnyConnect VPN
 brew "openconnect"
+# Open source distributed and RESTful search engine
+brew "opensearch"
 # Drop-in replacement for Terraform. Infrastructure as Code Tool
 brew "opentofu"
 # PNG file optimizer
 brew "optipng"
+# Terminal User Interface (TUI) to view & control docker containers
+brew "oxker"
+# Program for transforming PDF files
+brew "paperjam"
 # Parallel gzip
 brew "pigz"
 # Python dependency management tool
 brew "pipenv"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Draw UML diagrams
 brew "plantuml"
 # Python package management tool
@@ -205,6 +217,8 @@ brew "rage"
 brew "rclone"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Safe, concurrent, practical language
+brew "rust"
 # Build tool for Scala projects
 brew "sbt"
 # Command-line tool to manage Scala environments
@@ -215,16 +229,24 @@ brew "skaffold"
 brew "skopeo"
 # Editor of encrypted files
 brew "sops"
+# Data wrangler with jq-like query language
+brew "sq"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
+# TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
+brew "tabiew"
 # Log file highlighter
 brew "tailspin"
+# Tool to detect and prevent secrets from getting checked in
+brew "talisman"
+# Secrets management tool for developers
+brew "teller"
 # Tool to build, change, and version infrastructure
 brew "terraform"
 # HTTP/HTTPS proxy for POSIX systems
-brew "tinyproxy", restart_service: true
+brew "tinyproxy"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -237,6 +259,8 @@ brew "trivy"
 brew "typescript"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Tool for working with usage-spec CLIs
+brew "usage"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Disaster recovery for Kubernetes resources and persistent volumes
@@ -287,14 +311,10 @@ brew "sambadevi/powerlevel9k/powerlevel9k"
 brew "thezoraiz/ascii-image-converter/ascii-image-converter"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
-# Password manager that keeps all passwords secure behind one password
-cask "1password"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Application launcher and productivity software
 cask "alfred"
-# Two-factor authentication software
-cask "authy"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Web browser focusing on privacy
@@ -321,8 +341,8 @@ cask "jettison"
 cask "lens"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
-# Slicer for Resin 3D printers
-cask "lycheeslicer"
+# Minimal installer for conda
+cask "miniconda"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Programmable solid 3D CAD modeller
@@ -351,9 +371,12 @@ cask "vagrant"
 cask "visual-studio-code"
 # All-in-One Java Troubleshooting Tool
 cask "visualvm"
+# Utility for extracting text from images, videos, QR codes and barcodes
+cask "viz"
 # Network protocol analyzer
 cask "wireshark"
 # Create diagrams manually, or import external data for analysis
 cask "yed"
 # Video communication and virtual meeting platform
 cask "zoom"
+whalebrew "directory"
