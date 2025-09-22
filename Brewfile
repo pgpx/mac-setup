@@ -39,8 +39,6 @@ brew "aws-rotate-key"
 brew "awscli"
 # Azure Storage data transfer utility
 brew "azcopy"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
 # Gnome disk usage analyzer
@@ -103,6 +101,8 @@ brew "git-gui"
 brew "git-lfs"
 # Audit git repos for secrets
 brew "gitleaks"
+# Open-source GitLab command-line tool
+brew "glab"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU version of the tar archiving utility
@@ -127,6 +127,8 @@ brew "htop"
 brew "httpie"
 # Client library for huggingface.co hub
 brew "huggingface-cli"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Calculate various network masks, etc. from a given IP address
@@ -229,6 +231,8 @@ brew "paperjam"
 brew "pigz"
 # Python dependency management tool
 brew "pipenv"
+# Package management made easy
+brew "pixi"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Draw UML diagrams
@@ -465,3 +469,4 @@ cask "yed"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+vscode "ms-vscode.js-debug-companion"
