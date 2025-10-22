@@ -16,6 +16,7 @@ tap "pgpx/download-apache-tomcat"
 tap "pgpx/paul"
 tap "pilat/devbox"
 tap "pulumi/tap"
+tap "robusta-dev/krr"
 tap "sambadevi/powerlevel9k"
 tap "thezoraiz/ascii-image-converter"
 tap "weaveworks/tap"
@@ -57,6 +58,8 @@ brew "chiko"
 brew "cloc"
 # Command-line tool to manage cert-manager
 brew "cmctl"
+# OpenAI's coding agent that runs in your terminal
+brew "codex"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Container Signing
@@ -73,6 +76,8 @@ brew "direnv"
 brew "dive"
 # Docker Credential Helper for Amazon ECR
 brew "docker-credential-helper-ecr"
+# View disk space usage and delete unwanted data, fast
+brew "dua-cli"
 # Slightly quackers Docker TUI based on k9s
 brew "ducker"
 # CLI tool for versioning data
@@ -177,6 +182,8 @@ brew "kustomize"
 brew "kyverno"
 # Lazier way to manage everything docker
 brew "lazydocker"
+# Lets you manipulate the signature block in a Mach-O binary
+brew "ldid"
 # Sophisticated file transfer program
 brew "lftp"
 # Git-native dotfiles management that doesn't suck
@@ -219,14 +226,14 @@ brew "ollama"
 brew "openconnect"
 # Open source distributed and RESTful search engine
 brew "opensearch"
-# Drop-in replacement for Terraform. Infrastructure as Code Tool
-brew "opentofu"
 # PNG file optimizer
 brew "optipng"
 # Terminal User Interface (TUI) to view & control docker containers
 brew "oxker"
 # Program for transforming PDF files
 brew "paperjam"
+# Highly parallelized, blazing fast directory tree analyzer
+brew "parallel-disk-usage"
 # Parallel gzip
 brew "pigz"
 # Python dependency management tool
@@ -299,6 +306,8 @@ brew "tailspin"
 brew "talisman"
 # Secrets management tool for developers
 brew "teller"
+# OpenTofu / Terraform / Terragrunt / Terramate / Atmos version manager
+brew "tenv"
 # CLI that checks Terraform code for module updates
 brew "terraform-module-versions"
 # Linter for Terraform files
@@ -365,8 +374,6 @@ brew "etopeter/tap/kubectl-view-utilization"
 brew "gabrie30/utils/ghorg"
 # Fast linters runner for Go.
 brew "golangci/tap/golangci-lint"
-# Terraform
-brew "hashicorp/tap/terraform"
 # Format Agnostic jQ
 brew "jzelinskie/faq/faq"
 # Common assertions for Bats
@@ -381,6 +388,8 @@ brew "peak/tap/s5cmd"
 brew "pgpx/download-apache-tomcat/download-apache-tomcat@9.0.34"
 # A swiss army knife for Pulumi development
 brew "pulumi/tap/pulumictl"
+# Kubernetes Resource Recommender by Robusta
+brew "robusta-dev/krr/krr"
 # A badass zsh theme with more power than a normal earthling
 brew "sambadevi/powerlevel9k/powerlevel9k"
 # Convert images into ascii art
@@ -469,4 +478,17 @@ cask "yed"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+vscode "eamodio.gitlens"
+vscode "golang.go"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.js-debug-companion"
+vscode "openai.chatgpt"
+vscode "redhat.vscode-yaml"
+go "golang.org/x/tools/gopls"
+go "honnef.co/go/tools/cmd/staticcheck"
